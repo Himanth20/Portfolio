@@ -14,30 +14,40 @@
         .logo { font-size: 1.5rem; font-weight: 700; color: #667eea; }
         .nav-links { display: flex; list-style: none; gap: 2rem; }
         .nav-links a { text-decoration: none; color: #333; font-weight: 500; transition: color 0.3s; }
-        .nav-links a:hover { color: #667eea; }
-        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8rem 0; text-align: center; }
-        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
-        .btn { display: inline-block; padding: 0.75rem 2rem; background: white; color: #667eea; text-decoration: none; border-radius: 0.5rem; font-weight: 600; margin: 0.5rem; }
+        .nav-links a:hover { color: #FF6B6B; }
+        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #F093FB 100%); color: white; padding: 5rem 0; text-align: center; position: relative; }
+        .hero-content { display: flex; align-items: center; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+        .hero-text { flex: 1; min-width: 300px; }
+        .hero-image { flex: 1; min-width: 200px; }
+        .hero-image img { width: 250px; height: 250px; border-radius: 15px; border: 5px solid white; box-shadow: 0 10px 40px rgba(0,0,0,0.3); object-fit: cover; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; }
+        .btn { display: inline-block; padding: 0.75rem 2rem; background: white; color: #667eea; text-decoration: none; border-radius: 0.5rem; font-weight: 600; margin: 0.5rem; transition: all 0.3s; }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
         section { background: white; margin: 3rem 0; padding: 3rem; border-radius: 1rem; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
-        h2 { font-size: 2.5rem; margin-bottom: 2rem; border-bottom: 3px solid #667eea; padding-bottom: 1rem; }
+        h2 { font-size: 2.5rem; margin-bottom: 2rem; background: linear-gradient(135deg, #667eea, #FF6B6B, #F093FB); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; padding-bottom: 1rem; border-bottom: 3px solid #FF6B6B; }
         .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
-        .skill-card { background: #f8f9fa; padding: 1.5rem; border-radius: 0.5rem; border-left: 4px solid #667eea; }
+        .skill-card { background: linear-gradient(135deg, #667eea15 0%, #FF6B6B15 100%); padding: 1.5rem; border-radius: 0.5rem; border-left: 4px solid #FF6B6B; transition: all 0.3s; }
+        .skill-card:hover { transform: translateX(5px); box-shadow: 0 5px 15px rgba(255, 107, 107, 0.2); }
         .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-        .project-card { background: #f8f9fa; padding: 2rem; border-radius: 0.5rem; border-top: 4px solid #667eea; }
-        .tech { background: #667eea; color: white; padding: 0.3rem 0.8rem; border-radius: 0.3rem; font-size: 0.85rem; margin: 0.2rem; display: inline-block; }
-        .contact { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important; color: white; }
-        .contact h2 { color: white; border-bottom: 3px solid white; }
+        .project-card { background: linear-gradient(135deg, #667eea15 0%, #F093FB15 100%); padding: 2rem; border-radius: 0.5rem; border-top: 4px solid #4C63D2; transition: all 0.3s; }
+        .project-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3); }
+        .tech { background: linear-gradient(135deg, #667eea, #FF6B6B); color: white; padding: 0.3rem 0.8rem; border-radius: 0.3rem; font-size: 0.85rem; margin: 0.2rem; display: inline-block; }
+        .contact { background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #FF6B6B 100%) !important; color: white; }
+        .contact h2 { color: white; border-bottom: 3px solid white; -webkit-text-fill-color: white; background: none; }
         .contact-links { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .contact-links a { color: white; text-decoration: none; padding: 0.5rem 1rem; }
+        .contact-links a { color: white; text-decoration: none; padding: 0.5rem 1rem; border: 2px solid white; border-radius: 0.5rem; transition: all 0.3s; }
+        .contact-links a:hover { background: white; color: #667eea; }
         footer { text-align: center; padding: 2rem; background: #333; color: white; }
         
-        /* Mobile Responsiveness */
         @media (max-width: 768px) {
             .logo { font-size: 1.2rem; }
             .nav-links { gap: 1rem; }
             .nav-links a { font-size: 0.9rem; }
             .hero h1 { font-size: 2rem; padding: 0 1rem; }
-            .hero { padding: 4rem 0; }
+            .hero { padding: 3rem 0; }
+            .hero-content { flex-direction: column; gap: 1.5rem; }
+            .hero-image img { width: 200px; height: 200px; }
             .btn { padding: 0.6rem 1.5rem; font-size: 0.9rem; margin: 0.5rem 0.25rem; }
             section { margin: 1.5rem 0; padding: 1.5rem; }
             h2 { font-size: 1.8rem; margin-bottom: 1.5rem; }
@@ -56,12 +66,13 @@
             .nav-links { gap: 0.5rem; }
             .nav-links a { font-size: 0.8rem; }
             .hero h1 { font-size: 1.5rem; }
-            .hero { padding: 3rem 0; }
+            .hero { padding: 2rem 0; }
             h2 { font-size: 1.5rem; }
             section { margin: 1rem 0; padding: 1.2rem; }
             .hero p { font-size: 0.95rem; }
             .contact-links { gap: 0.5rem; }
             footer { padding: 1rem; font-size: 0.9rem; }
+            .hero-image img { width: 150px; height: 150px; }
         }
     </style>
 </head>
@@ -79,23 +90,30 @@
             </nav>
         </div>
     </header>
-
+    
     <section class="hero">
         <div class="container">
-            <h1>Burra Himanth Sai</h1>
-            <p>Java Developer | Backend Development | Recent CS Graduate</p>
-            <a href="https://github.com/Himanth20" class="btn">View GitHub</a>
-            <a href="https://linkedin.com/in/himanthsai" class="btn">LinkedIn</a>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Burra Himanth Sai</h1>
+                    <p>Java Developer | Backend Development | Recent CS Graduate</p>
+                    <a href="https://github.com/Himanth20" class="btn">View GitHub</a>
+                    <a href="https://linkedin.com/in/himanthsai" class="btn">LinkedIn</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://github.com/Himanth20/Portfolio/blob/main/profile.jpg?raw=true" alt="Burra Himanth Sai">
+                </div>
+            </div>
         </div>
     </section>
-
+    
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
             <p>Hi! I'm Burra Himanth Sai, a recent Computer Science graduate from <strong>SIMATS Engineering, Kanchipuram</strong> (2021-2025, CGPA: 8.32/10).</p>
             <p style="margin-top: 1rem;">I specialize in <strong>Java Development</strong> and building robust backend systems. Actively seeking opportunities in <strong>backend development</strong> and <strong>software engineering</strong>.</p>
         </section>
-
+        
         <section id="skills">
             <h2>Technical Skills</h2>
             <div class="skills">
@@ -125,7 +143,7 @@
                 </div>
             </div>
         </section>
-
+        
         <section id="projects">
             <h2>Projects</h2>
             <div class="projects">
@@ -150,7 +168,7 @@
                 </div>
             </div>
         </section>
-
+        
         <section id="contact" class="contact">
             <h2>Get In Touch</h2>
             <p>Actively looking for backend development opportunities!</p>
@@ -162,7 +180,7 @@
             </div>
         </section>
     </div>
-
+    
     <footer>
         <p>© 2025 Burra Himanth Sai. All rights reserved.</p>
     </footer>
