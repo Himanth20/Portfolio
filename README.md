@@ -2,8 +2,7 @@
 
 ## About Me
 
-I am a recent Computer Science graduate from **SIMATS Engineering, Kanchipuram** with a passion for Java Development, Data Engineering, and innovative technology solutions. I specialize in building robust backend systems and exploring data engineering tools.
-
+I am a recent Computer Science graduate from **SIMATS Engineering, Kanchipuram** with a passion for Java Development and innovative technology solutions. I specialize in building robust backend systems and exploring tools.
 **Education:**
 - B.Tech in Computer Science & Engineering
 - SIMATS Engineering, Kanchipuram
@@ -15,7 +14,6 @@ I am a recent Computer Science graduate from **SIMATS Engineering, Kanchipuram**
 
 **Programming Languages:**
 - Java (OOP, Exception Handling, Multithreading)
-- Python
 - SQL
 
 **Web Technologies:**
